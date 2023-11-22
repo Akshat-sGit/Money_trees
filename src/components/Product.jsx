@@ -62,8 +62,8 @@ theme="dark"
                     <div className="card-body">
                       <h5 className="card-title">{product.title}</h5>
                       <p className="card-text">{product.description}</p>
-                      <button className="btn btn-primary mx-3">
-                        {product.price} ₹
+                      <button className="btn btn-primary mx-3 pricebtn">
+                        {product.price} ETH
                       </button>
                       <button
                       onClick={()=>addToCart(product.id,product.price,product.title,product.description,product.imgSrc)}
