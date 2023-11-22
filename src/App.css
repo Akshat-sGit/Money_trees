@@ -1,0 +1,13 @@
+/* change the background color */ 
+.App {
+  text-align: center;
+  background-color: #2a7e19;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

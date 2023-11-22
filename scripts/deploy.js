@@ -4,21 +4,34 @@
 // You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
-import hre from "hardhat";
+import { ethers } from "ethers"; // Importing ethers object correctly
 
-const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-const unlockTime = currentTimestampInSeconds + 60;
+async function deployLockContract() {
+  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
+  const unlockTime = currentTimestampInSeconds + 60;
 
-const lockedAmount = hre.ethers.parseEther("0.001");
+  const provider = new ethers.providers.JsonRpcProvider("https://sepolia.infura.io/v3/");
+  const signer = provider.getSigner(); // Get the signer for transactions
 
-const lock = await ethers.deployContract("Lock", [unlockTime], {
-  value: lockedAmount,
-});
+  // Define your product-related data or remove the placeholder Product
+  const product = {
+    productId: 1,
+    name: "Sample Product",
+    price: ethers.utils.parseEther("1"), // Example price in Ether
+    quantity: 10,
+  };
 
-await lock.waitForDeployment();
+  // Deploy the contract using the EcommerceStock ABI and bytecode
+  const EcommerceStock = await ethers.getContractFactory("EcommerceStock");
+  const lock = await EcommerceStock.deploy(product); // Passing product data to the constructor
 
-console.log(
-  `Lock with ${ethers.formatEther(
-    lockedAmount
-  )}ETH and unlock timestamp ${unlockTime} deployed to ${lock.target}`
-);
+  // Wait for the contract deployment transaction to be mined
+  await lock.deployed();
+
+  // Log deployment details
+  console.log(
+    `Lock with ${ethers.utils.formatEther(product.price)} ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
+  );
+}
+
+deployLockContract().catch((error) => console.error(error));
