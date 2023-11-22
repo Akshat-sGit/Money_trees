@@ -13,14 +13,12 @@ const ProductDetail = ({ cart, setCart }) => {
 
   useEffect(() => {
     const filterProduct = items.filter((prodcut) => prodcut.id == id);
-    //  console.log(filterProduct)
     setProduct(filterProduct[0]);
 
     const relatedProducts = items.filter(
       (suman) => suman.category === product.category
     );
 
-    // console.log("RelatedProduct = ",relatedProducts)
     setRelatedProducts(relatedProducts);
   }, [id, product.category]);
 
@@ -67,7 +65,7 @@ const ProductDetail = ({ cart, setCart }) => {
         <div className="text-center">
           <h1 className="card-title">{product.title}</h1>
           <p className="card-text">{product.description}</p>
-          <button className="btn btn-primary mx-3">{product.price} ₹</button>
+          <button className="btn btn-primary mx-3 pricebtn">{product.price} ETH</button>
           <button
             onClick={() =>
               addToCart(

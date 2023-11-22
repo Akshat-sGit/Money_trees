@@ -13,7 +13,7 @@ export const items =  [
       title: "Peace Lily",
       imgSrc: 'https://www.plantandflowerinfo.com/images/peace-lily-houseplant.jpg',
       description: 'Peace Lily is an easy house plant to grow but will wilt quickly if let to dry too much. Will produce white spathes if light is adequate.',
-      price: '0.01',
+      price: '0.001',
     },
     {
       id: 7,
@@ -21,7 +21,7 @@ export const items =  [
       title: "Golden Pothos",
       imgSrc: 'https://www.plantandflowerinfo.com/images/pothos-houseplant.jpg',
       description: 'A popular house plant, it will trail over the edge of the pot or climb a trellis or pole. Medium to bright light is best. Easy care house plant.',
-      price: '0.01',
+      price: '0.001',
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export const items =  [
       title: "Cast Iron Plant",
       imgSrc: 'https://www.plantandflowerinfo.com/images/cast-iron-house-plant.jpg',
       description: 'Cast Iron plant can be grown indoors or outdoors. It will thin in indoor light but they are pretty hardy plants. I grow them on my porch and patio. They can be left out in the cold weather, too!',
-      price: '0.01',
+      price: '0.001',
     },
     {
       id: 6,
@@ -37,7 +37,7 @@ export const items =  [
       title: "Nephthytis",
       imgSrc: 'https://www.plantandflowerinfo.com/images/nephthytis-houseplant.jpg',
       description: 'Nephthytis is an easy houseplant to care for and grow. Will do best with bright, indirect light. Will tolerate lower light levels.',
-      price: '0.01',
+      price: '0.001',
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ export const items =  [
       title: "ZZ House Plant",
       imgSrc: 'https://www.plantandflowerinfo.com/images/zz-plant-indoor-house-plant300250.jpg',
       description: 'This is the nickname for the Zamioculcas zamifolia. ZZ Plant has become quite popular and is easy to care for.',
-      price: '0.01',
+      price: '0.001',
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ export const items =  [
       title: "Pachira Plant",
       imgSrc: 'https://www.plantandflowerinfo.com/images/pachira-indoor-house-plant300250.jpg',
       description: 'Quite a popular novelty plant, the Pachira plant is known by the common name of Money Tree. Usually has a braided trunk. Easy care.',
-      price: '0.01',
+      price: '0.001',
     },
     {
       id: 9,
@@ -61,7 +61,7 @@ export const items =  [
       title: "Arboricola",
       imgSrc: 'https://www.plantandflowerinfo.com/images/arboricola-braid-plant.jpg',
       description: 'This is a braided trunk Arboricola. Arboricola can also have a single trunk, and it is very often grown in a bush form, with multiple stems growing from the soil.',
-      price: '0.01',
+      price: '0.001',
     },
     {
       id: 8,
@@ -69,7 +69,7 @@ export const items =  [
       title: "Croton",
       imgSrc: 'https://www.plantandflowerinfo.com/images/croton-plant-in-white-pot.jpg',
       description: 'Croton is a colorful houseplant. Easy to care for once you have successfully acclimated to your home environment.',
-      price: '0.01',
+      price: '0.001',
     },
 
 
