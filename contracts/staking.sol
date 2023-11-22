@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 import "../node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol"; 
+
 
 contract StakingContract is ERC20 {
     address public owner;
