@@ -9,7 +9,7 @@
     justify-content: space-between;
     background-color: #2a7e19;
     padding: 20px 0px;
-    color: white;
+    color: navajowhite;
 }
 .brand{
     font-weight: 900;
@@ -79,4 +79,23 @@ input::placeholder{
 .btn-primary:hover {
     background-color: transparent;
     border-color: yellowgreen;
+}
+
+.pricebtn {
+    color: black;
+    border-color: yellowgreen;
+}
+
+.pricebtn:hover {
+    color: black;
+    border-color: #2a7e19;
+}
+
+body {
+    background: url("https://www.fao.org/images/newsroomlibraries/breafing-notes/36949400340_030e4ae5f9_oab4ccd35-fd6a-4230-bd2e-f0113f50357d.jpg?sfvrsn=426ca1c_3");
+    background-size: cover;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7);
 }
