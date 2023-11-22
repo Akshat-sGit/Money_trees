@@ -3,7 +3,7 @@ export const items =  [
       id: 1,
       category: 'mobiles',
       title: "Apple iPhone 14",
-      imgSrc: 'https://m.media-amazon.com/images/I/71xb2xkN5qL._SL1500_.jpg',
+      imgSrc: 'https://images.app.goo.gl/U8mVacBKJ32AEb386',
       amazonLink: 'https://amzn.to/3PuckZp',
       description: 'Apple iPhone 14 (128 GB) - Blue',
       price: '89999',
