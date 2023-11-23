@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {purchaseProduct} from './web3' 
 
 const Cart = ({cart,setCart}) => {
   return (
@@ -18,7 +19,7 @@ const Cart = ({cart,setCart}) => {
         return(
           <>
           <div className="card mb-3 my-5" style={{width:'700px'}}>
-  <div className="row g-0">
+  <div className="row g-0 cart-card">
     <div className="col-md-4">
       <img src={product.imgSrc} className="img-fluid rounded-start" alt="..." />
     </div>
@@ -27,10 +28,10 @@ const Cart = ({cart,setCart}) => {
         <h5 className="card-title">{product.title}</h5>
         <p className="card-text">{product.description}</p>
         <button className="btn btn-primary mx-3">
-                        {product.price} ₹
+                        {product.price} ETH
                       </button>
                       <button
-                 
+                        onClick={purchaseProduct}
                        className="btn btn-warning"
                        >Buy Now</button>
       </div>
