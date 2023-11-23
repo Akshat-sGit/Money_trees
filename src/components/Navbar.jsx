@@ -57,7 +57,7 @@ const Navbar = ({ setData, cart }) => {
             </button>
           </div> 
           <div className="web3">
-        <button onClick={handleConnectContract} type="button" className="btn btn-primary">
+        <button type="button" className="btn btn-primary">
           Connect Contract
         </button>
       </div>

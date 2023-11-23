@@ -9,10 +9,9 @@ import { items } from './components/Data'
 
 
 const App = () => {
+  
   const [data, setData] = useState([...items])
   const [cart, setCart] = useState([]) 
-
-  
 
   return (
     <>

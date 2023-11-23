@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {purchaseProduct} from './web3' 
 
 const Cart = ({cart,setCart}) => {
   return (
@@ -30,7 +31,7 @@ const Cart = ({cart,setCart}) => {
                         {product.price} ETH
                       </button>
                       <button
-                 
+                        onClick={purchaseProduct}
                        className="btn btn-warning"
                        >Buy Now</button>
       </div>
