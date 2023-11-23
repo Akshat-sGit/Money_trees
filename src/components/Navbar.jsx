@@ -56,11 +56,6 @@ const Navbar = ({ setData, cart }) => {
               Connect
             </button>
           </div> 
-          <div className="web3">
-        <button type="button" className="btn btn-primary">
-          Connect Contract
-        </button>
-      </div>
 
           <Link to={'/cart'} className="cart">
             <button type="button" className="btn btn-primary position-relative">
