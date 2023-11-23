@@ -16,7 +16,6 @@ async function main() {
   const EcommerceStock = await ethers.getContractFactory('EcommerceStock');
   const ecommerceStock = await EcommerceStock.deploy();
 
-  // Wait for the contract to be mined
   await ecommerceStock.waitForDeployment();
 
   console.log('EcommerceStock deployed to:', ecommerceStock.address);

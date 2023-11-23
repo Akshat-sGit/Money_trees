@@ -5,6 +5,7 @@ import Product from "./Product";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 const ProductDetail = ({ cart, setCart }) => {
   const { id } = useParams();
 

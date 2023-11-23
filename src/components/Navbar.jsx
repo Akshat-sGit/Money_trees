@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { items } from './Data';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 
-
 const Navbar = ({ setData, cart }) => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -34,6 +33,7 @@ const Navbar = ({ setData, cart }) => {
     setSearchTerm('');
   };
 
+
   return (
     <>
       <header className="sticky-top">
@@ -55,7 +55,12 @@ const Navbar = ({ setData, cart }) => {
             <button onClick={connectToMetaMask} type="button" className="btn btn-primary">
               Connect
             </button>
-          </div>
+          </div> 
+          <div className="web3">
+        <button type="button" className="btn btn-primary">
+          Connect Contract
+        </button>
+      </div>
 
           <Link to={'/cart'} className="cart">
             <button type="button" className="btn btn-primary position-relative">
