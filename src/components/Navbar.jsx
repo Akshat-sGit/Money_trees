@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { items } from './Data';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 
 const Navbar = ({ setData, cart }) => {
