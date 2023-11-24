@@ -1,64 +1,124 @@
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-    background-color: #270858;
-    padding: 10px;
-    color: white;
-}
-.brand{
-    font-weight: bolder;
-    width: 20%;
-    text-align: center;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.search-bar{
-    width: 60%;
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2a7e19;
+  padding: 20px 0px;
+  color: navajowhite;
+}
+.brand {
+  font-weight: 900;
+  width: 20%;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
 }
 
-.search-bar input{
-    width: 55%;
-    /* text-align:center; */
-}
-input::placeholder{
-    padding: 10px;
-    font-weight: bold;
+.search-bar {
+  width: 60%;
 }
 
-.cart{
-    width: 20%;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
+.search-bar input {
+  width: 55%;
+  /* text-align:center; */
+}
+input::placeholder {
+  padding: 10px;
+  font-weight: bold;
 }
 
-.nav-bar-wrapper{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: #4b1b78;
-    color: white;
-    font-weight: bold;
+.cart {
+  width: 20%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
 }
 
-.img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nav-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #4b1b78;
+  color: white;
+  font-weight: bold;
 }
 
-.img img{
-    width: 350px;
-    height: 350px;
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.con{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:4rem
+.img img {
+  width: 350px;
+  height: 350px;
+}
+
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.btn-primary {
+  background-color: yellowgreen;
+  border-color: yellow;
+  transition: 0.5s;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border-color: yellowgreen;
+}
+
+.pricebtn {
+  color: black;
+  border-color: yellowgreen;
+}
+
+.pricebtn:hover {
+  color: black;
+  border-color: #2a7e19;
+}
+
+body {
+  background: url("https://www.fao.org/images/newsroomlibraries/breafing-notes/36949400340_030e4ae5f9_oab4ccd35-fd6a-4230-bd2e-f0113f50357d.jpg?sfvrsn=426ca1c_3");
+  background-size: cover;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  color: white;
+}
+
+.con {
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart-card {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-title,
+.card-text {
+  color: black;
 }
