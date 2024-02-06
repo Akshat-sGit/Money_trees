@@ -8,6 +8,7 @@ const Navbar = ({ setData, cart }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const connectToMetaMask = async () => {
+    let btn = document.getElementById('connectbtn');
     try {
       if (window.ethereum) {
         // Request MetaMask account access
@@ -15,6 +16,7 @@ const Navbar = ({ setData, cart }) => {
 
         // Handle successful connection
         console.log('Connected accounts:', accounts);
+        btn.textContent = 'Connected';  
         // Perform further actions or state updates upon successful connection
       } else {
         console.error('MetaMask not detected');
@@ -51,7 +53,7 @@ const Navbar = ({ setData, cart }) => {
           </form>
 
           <div className="connect">
-            <button onClick={connectToMetaMask} type="button" className="btn btn-primary">
+            <button id='connectbtn' onClick={connectToMetaMask} type="button" className="btn btn-primary">
               Connect
             </button>
           </div> 
