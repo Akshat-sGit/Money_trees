@@ -20,7 +20,6 @@ async function sendTransactiontest(count) {
     value: Number(count*1000000000000000).toString(16),
   }]
   let result = await window.ethereum.request({method: 'eth_sendTransaction', params: params}) 
-
   
 }
 
